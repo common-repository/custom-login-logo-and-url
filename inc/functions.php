@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * if accessed directly, exit.
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if( ! function_exists( 'get_plugin_data' ) ) {
+	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+}
+
+/**
+ * Gets the site's base URL
+ * 
+ * @uses get_bloginfo()
+ * 
+ * @return string $url the site URL
+ */
+if( ! function_exists( 'WPPCLLU_site_url' ) ) :
+function WPPCLLU_site_url() {
+	$url = get_bloginfo( 'url' );
+
+	return $url;
+}
+endif;

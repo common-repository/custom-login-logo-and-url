@@ -1,0 +1,18 @@
+{
+    "authors": [
+        {
+            "name": "WPPlugines/Custom_Login_Logo_And_URL",
+            "email": "hi@codexpert.io"
+        }
+    ],
+    "require": {
+        "codexpert/plugin": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPPlugines\\Custom_Login_Logo_And_URL\\" : "classes/",
+            "WPPlugines\\Custom_Login_Logo_And_URL\\App\\" : "app/"
+        },
+        "files": []
+    }
+}
